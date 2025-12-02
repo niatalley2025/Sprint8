@@ -1,5 +1,5 @@
-import data.py
-import helpers.py
+import data
+import helpers
 
 
 class TestUrbanRoutes:
@@ -7,7 +7,7 @@ class TestUrbanRoutes:
     def setup_class(cls):
         # Check if the server is reachable before running tests
         if helpers.is_url_reachable(data.URBAN_ROUTES_URL):
-            print('Connect to Urban Routes server')
+            print('Connected to Urban Routes server')
         else:
             print("Cannot connect to Urban Routes. Check the server is on and still running")
 
