@@ -44,7 +44,7 @@ def is_url_reachable(url):
             # print("Response Status Code:", response.status) #for debugging purposes
             if response.status == 200:
     return True
-            else:
+else:
                 return False
     except Exception as e:
         print (e)
